@@ -1,0 +1,64 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "getNums",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"numsvisibility.sol": "Visibility"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"numsvisibility.sol": {
+			"keccak256": "0x737a47ddf2018616e16cda3e18b74536d2a7086dfb3b91f55006f8993d90f34f",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://294119a46bba40b1605bdb4967977b8e62d76cd5c54b69b3c53decaea83f06b5",
+				"dweb:/ipfs/QmYf4iYEmRykuHB9AJCrkr7NzmBZSgKtNcSPbzTWjpe6MK"
+			]
+		}
+	},
+	"version": 1
+}
