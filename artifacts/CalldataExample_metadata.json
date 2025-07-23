@@ -1,0 +1,65 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "numbers",
+						"type": "uint256[]"
+					}
+				],
+				"name": "getArraySum",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"calldataexample.sol": "CalldataExample"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"calldataexample.sol": {
+			"keccak256": "0x8e7a50f7677a7450201169ce20123305f444158d6f83423421819c9a0d33502b",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://a64d9c5d70738eb8cbcd5f3597a8f6fadd8df929c09f48c462f0b26cf5b517fc",
+				"dweb:/ipfs/QmPXYSxNcg39qcECsy9hWU5QbhrG4KZ8KiMTCkAdQ9FonW"
+			]
+		}
+	},
+	"version": 1
+}
