@@ -16,7 +16,7 @@ _;
 function setResult(uint _result) public virtual onlyOwner {
 // Implementation
 }
-}
+} 
 
 contract ChildContract is ParentContract {
 uint result;

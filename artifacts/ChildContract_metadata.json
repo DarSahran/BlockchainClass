@@ -47,11 +47,11 @@
 	},
 	"sources": {
 		"inheritingandmodifier.sol": {
-			"keccak256": "0x477a777a40c74224a5bd5e80a599f8c20c0c8f695cbfb223e7e3ef2fce221302",
+			"keccak256": "0x5654fcdfcffde5562d980bea922d163c782fc80e7237ec82995016c6b0628227",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://f95a7c1856ab4c64bb15e818be9976c74e8c5bff5dffa2bf95d2dc92271ddf53",
-				"dweb:/ipfs/QmRNxfSRjofFPuqG1jfYNcV713UNV6J4SJnugZpwTs4PGc"
+				"bzz-raw://f851d2b07f601b212a9605bccb5e9506e048b8521c663e08f0900cb051fe0bb5",
+				"dweb:/ipfs/QmUtNf4aJLwDAgXCLWnzG5N7Pfp6zNq1sMKEmefMVELdHD"
 			]
 		}
 	},
