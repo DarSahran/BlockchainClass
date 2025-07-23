@@ -1,0 +1,65 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "arr",
+						"type": "uint256[]"
+					}
+				],
+				"name": "countEven",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"condi.sol": "CountEvenContract"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"condi.sol": {
+			"keccak256": "0x3a4d67debaf222faae43731b241d7574a5c85c0892139fd0560acd7fe18586dd",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://84f3688ab94d900960b1259cffa8382b7ab9bc764b546091a1d5edc66508a6d0",
+				"dweb:/ipfs/QmPo5VkF536wFiZEG5shivN6J6heDPBMV5gHtqP6LRR85f"
+			]
+		}
+	},
+	"version": 1
+}
