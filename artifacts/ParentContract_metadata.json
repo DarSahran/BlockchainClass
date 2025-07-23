@@ -11,19 +11,6 @@
 				"type": "constructor"
 			},
 			{
-				"inputs": [],
-				"name": "result",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
 				"inputs": [
 					{
 						"internalType": "uint256",
@@ -50,7 +37,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"functionmodifier.sol": "Visibility"
+			"inheritingandmodifier.sol": "ParentContract"
 		},
 		"evmVersion": "prague",
 		"libraries": {},
@@ -64,12 +51,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"functionmodifier.sol": {
-			"keccak256": "0x2e29eae4904668e836ecf83c94c276edcabd1b980cd68c73616348fe8d17fa62",
+		"inheritingandmodifier.sol": {
+			"keccak256": "0x477a777a40c74224a5bd5e80a599f8c20c0c8f695cbfb223e7e3ef2fce221302",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://4cb20b74677edba69796e805669c9bc0ffe5715b933c6f5b6ab1a50def5cb16f",
-				"dweb:/ipfs/QmRwugnUUEKNdi32WEkRKde1qgB8VYyQ9LaZGcR6kHzpVy"
+				"bzz-raw://f95a7c1856ab4c64bb15e818be9976c74e8c5bff5dffa2bf95d2dc92271ddf53",
+				"dweb:/ipfs/QmRNxfSRjofFPuqG1jfYNcV713UNV6J4SJnugZpwTs4PGc"
 			]
 		}
 	},

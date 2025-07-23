@@ -7,54 +7,67 @@
 		"abi": [
 			{
 				"inputs": [],
-				"name": "getInternalVar",
+				"name": "callBaseInternalFunction",
 				"outputs": [
 					{
-						"internalType": "uint256",
+						"internalType": "string",
 						"name": "",
-						"type": "uint256"
+						"type": "string"
 					}
 				],
-				"stateMutability": "view",
+				"stateMutability": "pure",
 				"type": "function"
 			},
 			{
 				"inputs": [],
-				"name": "getInternalVarFromBase",
+				"name": "callInternalFunction",
 				"outputs": [
 					{
-						"internalType": "uint256",
+						"internalType": "string",
 						"name": "",
-						"type": "uint256"
+						"type": "string"
 					}
 				],
-				"stateMutability": "view",
+				"stateMutability": "pure",
 				"type": "function"
 			},
 			{
 				"inputs": [],
-				"name": "getPrivateVar",
+				"name": "callPrivateFunction",
 				"outputs": [
 					{
-						"internalType": "uint256",
+						"internalType": "string",
 						"name": "",
-						"type": "uint256"
+						"type": "string"
 					}
 				],
-				"stateMutability": "view",
+				"stateMutability": "pure",
 				"type": "function"
 			},
 			{
 				"inputs": [],
-				"name": "publicVar",
+				"name": "externalFunction",
 				"outputs": [
 					{
-						"internalType": "uint256",
+						"internalType": "string",
 						"name": "",
-						"type": "uint256"
+						"type": "string"
 					}
 				],
-				"stateMutability": "view",
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "publicFunction",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "pure",
 				"type": "function"
 			}
 		],
@@ -71,7 +84,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"numsvisibility.sol": "DerivedVisibilityExample"
+			"varvisibilitywitheg.sol": "DerivedVisibilityExample"
 		},
 		"evmVersion": "prague",
 		"libraries": {},
@@ -85,12 +98,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"numsvisibility.sol": {
-			"keccak256": "0x65ce5c04f9c957ed49c87e0578c63268b95ebc782df092c11b70895c499ae2eb",
+		"varvisibilitywitheg.sol": {
+			"keccak256": "0x62b9d7b184a37e5862f4d656a79029d913947b4dbb61502d6c8954a73b72914b",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://f745916ad1377e89cd7625cc81afde0080694e52988197963c4a340f9bb04d00",
-				"dweb:/ipfs/QmeyKSL1F3NyWCr1H924gtQRBqS9ySmn6zTYUf8QVs8M4o"
+				"bzz-raw://6f3fa9322c27c111261ca99fa4440e355a50ce3b8aa3b871982467af59a1686a",
+				"dweb:/ipfs/Qma3bCjDpvFiYXcfoekFMS7X3qiECFYcVs5XN3pHMuaRhG"
 			]
 		}
 	},
