@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD DApp</title>
+    <script src="https://cdn.jsdelivr.net/npm/web3/dist/web3.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+        }
+        input, button {
+            margin: 5px 0;
+            padding: 10px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>CRUD DApp</h1>
+
+        <h2>Create User</h2>
+        <input type="text" id="createName" placeholder="Enter name">
+        <button onclick="createUser()">Create</button>
+
+        <h2>Read User</h2>
+        <input type="number" id="readId" placeholder="Enter user ID">
+        <button onclick="readUser()">Read</button>
+        <p id="readResult"></p>
+
+        <h2>Update User</h2>
+        <input type="number" id="updateId" placeholder="Enter user ID">
+        <input type="text" id="updateName" placeholder="Enter new name">
+        <button onclick="updateUser()">Update</button>
+
+        <h2>Delete User</h2>
+        <input type="number" id="deleteId" placeholder="Enter user ID">
+        <button onclick="deleteUser()">Delete</button>
+    </div>
+
+    <script>
+        let web3;
+        let crudContract;
+
+        const init = async () => {
+            if (window.ethereum) {
+                web3 = new Web3(window.ethereum);
+                await window.ethereum.enable();
+            } else {
+                alert('Please install MetaMask!');
+                return;
+            }
+
+            const networkId = await web3.eth.net.getId();
+            const deployedNetwork = Crud.networks[networkId];
+
+            crudContract = new web3.eth.Contract(
+                Crud.abi,
+                deployedNetwork && deployedNetwork.address
+            );
+        };
+
+        const createUser = async () => {
+            const name = document.getElementById('createName').value;
+            const accounts = await web3.eth.getAccounts();
+            await crudContract.methods.create(name).send({ from: accounts[0] });
+            alert('User created!');
+        };
+
+        const readUser = async () => {
+            const id = document.getElementById('readId').value;
+            const user = await crudContract.methods.read(id).call();
+            document.getElementById('readResult').innerText = `ID: ${user[0]}, Name: ${user[1]}`;
+        };
+
+        const updateUser = async () => {
+            const id = document.getElementById('updateId').value;
+            const name = document.getElementById('updateName').value;
+            const accounts = await web3.eth.getAccounts();
+            await crudContract.methods.update(id, name).send({ from: accounts[0] });
+            alert('User updated!');
+        };
+
+        const deleteUser = async () => {
+            const id = document.getElementById('deleteId').value;
+            const accounts = await web3.eth.getAccounts();
+            await crudContract.methods.destroy(id).send({ from: accounts[0] });
+            alert('User deleted!');
+        };
+
+        window.onload = init;
+    </script>
+
+    <script src="build/contracts/Crud.json"></script>
+</body>
+</html>
